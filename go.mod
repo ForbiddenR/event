@@ -1,6 +1,6 @@
 module github.com/gookit/event
 
-go 1.19
+go 1.25
 
 require github.com/gookit/goutil v0.7.3
 

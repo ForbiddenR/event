@@ -65,7 +65,7 @@ func (em *Manager) FireC(name string, params M) {
 //   - will call listeners handle event.
 //   - if not found listener, will return (nil, nil)
 func (em *Manager) fireByName(name string, params M, useCh bool) (Event, error) {
-	return em.fireByNameCtx(nil, name, params, useCh)
+	return em.fireByNameCtx(context.TODO(), name, params, useCh)
 }
 
 // fireByNameCtx fire event by name with context

@@ -209,9 +209,7 @@ func (em *Manager) HasEvent(name string) bool {
 
 // RemoveEvent delete pre-define Event by name
 func (em *Manager) RemoveEvent(name string) {
-	if _, ok := em.eventFc[name]; ok {
-		delete(em.eventFc, name)
-	}
+	delete(em.eventFc, name)
 }
 
 // RemoveEvents remove all registered events
